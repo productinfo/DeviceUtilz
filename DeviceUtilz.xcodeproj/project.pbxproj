@@ -11,11 +11,11 @@
 		2E0F73B61DA161920039364B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F73B51DA161920039364B /* main.m */; };
 		2E0F73BB1DA161930039364B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0F73B91DA161930039364B /* MainMenu.xib */; };
 		2E0F73C41DA161F00039364B /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0F73C21DA161F00039364B /* MobileDevice.framework */; };
-		2E0F73C81DA1696C0039364B /* irecovery in Resources */ = {isa = PBXBuildFile; fileRef = 2E0F73C71DA1696C0039364B /* irecovery */; };
 		2E0F73CA1DA17A740039364B /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2E0F73C91DA17A740039364B /* Icon.icns */; };
 		2E0F73CC1DA17AAB0039364B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0F73CB1DA17AAB0039364B /* Assets.xcassets */; };
 		2E0F73D01DA188BA0039364B /* infoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F73CE1DA188BA0039364B /* infoWindow.m */; };
 		2E0F73D11DA188BA0039364B /* infoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E0F73CF1DA188BA0039364B /* infoWindow.xib */; };
+		2E0F73E61DA2FB0D0039364B /* irecovery in Resources */ = {isa = PBXBuildFile; fileRef = 2E0F73E51DA2FB0D0039364B /* irecovery */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +27,12 @@
 		2E0F73BC1DA161930039364B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E0F73C21DA161F00039364B /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileDevice.framework; sourceTree = "<group>"; };
 		2E0F73C31DA161F00039364B /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
-		2E0F73C71DA1696C0039364B /* irecovery */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = irecovery; path = ../../../../Secutilz/RecBoot/irecovery; sourceTree = "<group>"; };
 		2E0F73C91DA17A740039364B /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		2E0F73CB1DA17AAB0039364B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E0F73CD1DA188BA0039364B /* infoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoWindow.h; sourceTree = "<group>"; };
 		2E0F73CE1DA188BA0039364B /* infoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoWindow.m; sourceTree = "<group>"; };
 		2E0F73CF1DA188BA0039364B /* infoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoWindow.xib; sourceTree = "<group>"; };
+		2E0F73E51DA2FB0D0039364B /* irecovery */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = irecovery; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		2E0F73B41DA161920039364B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E0F73C71DA1696C0039364B /* irecovery */,
+				2E0F73E51DA2FB0D0039364B /* irecovery */,
 				2E0F73B51DA161920039364B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -167,8 +167,8 @@
 			files = (
 				2E0F73BB1DA161930039364B /* MainMenu.xib in Resources */,
 				2E0F73D11DA188BA0039364B /* infoWindow.xib in Resources */,
-				2E0F73C81DA1696C0039364B /* irecovery in Resources */,
 				2E0F73CC1DA17AAB0039364B /* Assets.xcassets in Resources */,
+				2E0F73E61DA2FB0D0039364B /* irecovery in Resources */,
 				2E0F73CA1DA17A740039364B /* Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +298,7 @@
 				);
 				INFOPLIST_FILE = DeviceUtilz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.h3adsh0tzz.DeviceUtilz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -314,6 +315,7 @@
 				);
 				INFOPLIST_FILE = DeviceUtilz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.h3adsh0tzz.DeviceUtilz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -338,6 +340,7 @@
 				2E0F73C11DA161930039364B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
